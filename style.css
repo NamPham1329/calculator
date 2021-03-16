@@ -1,0 +1,40 @@
+.calculator{
+   max-width: 350px;
+   margin: auto;
+   background-color: #5a5a59; 
+   margin-top: 5%;
+   border: 2px solid;
+}
+.result{
+    height: 80px;
+    color: #fee5c7;
+    font-size: 60px;
+    float: right;
+    margin-right: 5px;
+}
+.button{
+    display: grid;
+    grid-template-columns: repeat(4, 5fr);
+    clear: both;
+}
+button{
+    height: 70px;
+    font-size: 25px;
+    color: #fee5c7;
+    font-weight: bold;
+}
+.he_thong{
+    background-color: #6c6c6b;
+}
+.phep_tinh{
+    background-color: #fd9f2b;
+}
+.con_so{
+    background-color: #868685;
+}
+.khong{
+    grid-column-end: span 2;
+}
+
+
+ 
