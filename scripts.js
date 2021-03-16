@@ -1,4 +1,4 @@
-var input=document.querySelector('.result');
+var input=document.querySelector('.content');
 var items=Array.from(document.querySelectorAll('.item'));
 var x='*';
 items.forEach(function(btn){
@@ -21,6 +21,9 @@ items.forEach(function(btn){
         }
         else if(this.id==','){
             input.innerHTML=(input.innerHTML)+'.';
+        }
+        else if(this.id=='÷'){
+            input.innerHTML=(input.innerHTML)+'/';
         }
         else input.innerHTML+=btn.innerHTML;
     })
