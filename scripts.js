@@ -1,10 +1,7 @@
 var input=document.querySelector('.content');
 var items=Array.from(document.querySelectorAll('.item'));
-var x='*';
 items.forEach(function(btn){
     btn.addEventListener('click',function(){
-        if(input.innerHTML=='zero')
-        input.innerHTML='';
         if(this.id=='delete_all')
         input.innerHTML='';
         else if(this.id=='result'){
@@ -25,9 +22,6 @@ items.forEach(function(btn){
         else if(this.id=='division'){
             input.innerHTML=(input.innerHTML)+'/';
         }
-        // else if(input.innerHTML="0"+btn.innerHTML){
-        //     return input.innerHTML;
-        // }
         else input.innerHTML+=btn.innerHTML;
     })
 })
